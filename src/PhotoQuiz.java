@@ -22,15 +22,15 @@ public class PhotoQuiz {
                 quizWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   // This will make sure the program exits when you close the window
 
 		// 1. find an image on the internet, and put its URL in a String variable (from your browser, right click on the image, and select “Copy Image Address”)
-
+                String imageurl = "https://www.toyota.com/imgix/responsive/images/mlp/colorizer/2018/prius/3T7/1.png?q=85&fm=jpg&w=1024&fit=max&cs=strip&bg=fff&auto=compress";
 		// 2. create a variable of type "Component" that will hold your image
-
+                Component comp;
 		// 3. use the "createImage()" method below to initialize your Component
-
+                comp = createImage(imageurl);
 		// 4. add the image to the quiz window
-
+                
 		// 5. call the pack() method on the quiz window
-
+              
 		// 6. ask a question that relates to the image
 
 		// 7. print "CORRECT" if the user gave the right answer
