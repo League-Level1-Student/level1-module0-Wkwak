@@ -28,26 +28,39 @@ public class PhotoQuiz {
 		// 3. use the "createImage()" method below to initialize your Component
                 comp = createImage(imageurl);
 		// 4. add the image to the quiz window
-                
+                quizWindow.add(comp);
 		// 5. call the pack() method on the quiz window
-              
+              quizWindow.pack();
 		// 6. ask a question that relates to the image
-
+              String question1 = JOptionPane.showInputDialog("If you drive this car then you must like Wall-E: True or False?");
 		// 7. print "CORRECT" if the user gave the right answer
-
+              if (question1.equals("true")) {
+            	  	JOptionPane.showMessageDialog(null, "CORRECT");
+              }
 		// 8. print "INCORRECT" if the answer is wrong
-
+              if (question1.equals("false")) {
+            	  	JOptionPane.showMessageDialog(null, "INCORRECT");
+              }
 		// 9. remove the component from the quiz window (you may not see the effect of this until step 12)
-
+              quizWindow.remove(comp);
 		// 10. find another image and create it (might take more than one line of code)
-
-		// 11. add the second image to the quiz window
-
+              String chapstickUrl = "https://www.burtsbees.com/on/demandware.static/-/Sites-burtsbees-master-catalog/default/dwc2d8c05f/images/large/Lip_Balm_Beeswax.jpg";
+              Component comp2;
+              comp2 = createImage(chapstickUrl);
+        
+        // 11. add the second image to the quiz window
+              quizWindow.add(comp2);
 		// 12. pack the quiz window
-
+              quizWindow.pack();
 		// 13. ask another question
-
+              String question2 = JOptionPane.showInputDialog("Is it worth investing stock into this company: Yes or No?");
 		// 14+ check answer, say if correct or incorrect, etc.
+             if (question2.equals("yes")) {
+            	 	JOptionPane.showMessageDialog(null, "CORRECT");
+             }
+             if (question2.equals("no")) {
+         	 	JOptionPane.showMessageDialog(null, "INCORRECT");
+             }
 
 	}
 
